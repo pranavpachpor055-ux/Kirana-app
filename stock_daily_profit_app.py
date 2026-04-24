@@ -133,7 +133,7 @@ else:
     total_pl = result_df['daily_pl_$'].dropna().sum() if 'daily_pl_$' in result_df.columns else 0.0
     c1, c2, c3 = st.columns(3)
     c1.metric('Positions', int(len(result_df)))
-    c2.metric('Total daily P/L', f"${total_pl:,.2f}")
+    c2.metric('Total daily P/L', f"₹{total_pl:,.2f}")
 
     # Show table
     show_df = result_df.copy()
