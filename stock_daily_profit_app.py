@@ -146,11 +146,11 @@ else:
         show_df,
         use_container_width=True,
         column_config={
-            'last_price': st.column_config.NumberColumn('Last', format='$%.2f'),
-            'previous_close': st.column_config.NumberColumn('Prev close', format='$%.2f'),
-            'change_$': st.column_config.NumberColumn('Change', format='$%.2f'),
+            'last_price': st.column_config.NumberColumn('Last', format='₹%.2f'),
+            'previous_close': st.column_config.NumberColumn('Prev close', format='₹%.2f'),
+            'change_$': st.column_config.NumberColumn('Change', format='₹%.2f'),
             'change_%': st.column_config.NumberColumn('Change %', format='%.2f%%'),
-            'daily_pl_$': st.column_config.NumberColumn('Daily P/L', format='$%.2f'),
+            'daily_pl_$': st.column_config.NumberColumn('Daily P/L', format='₹%.2f'),
             'daily_pl_%': st.column_config.NumberColumn('Daily P/L %', format='%.2f%%'),
         },
     )
