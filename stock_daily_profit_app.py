@@ -20,7 +20,7 @@ def fetch_quote(ticker: str):
     # Try multiple fields because Yahoo responses vary
     last_price = info.get('last_price') or info.get('lastPrice')
     prev_close = info.get('previous_close') or info.get('previousClose')
-
+     last_price = info.get('lastPrice', 0.0)
     # Fallback: 2d history
     if last_price is None or prev_close is None:
         hist = tkr.history(period='2d', interval='1d')
