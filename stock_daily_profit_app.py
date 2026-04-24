@@ -6,7 +6,7 @@ import plotly.graph_objects as go
 st.set_page_config(page_title='Stock Daily Profit', page_icon='📈', layout='centered')
 
 st.title('Stock info + daily profit')
-st.caption('Simple: enter tickers + shares, get today's P/L. Data via Yahoo Finance (yfinance).')
+st.caption('Simple: enter tickers + shares, get today's P/L. Data via Yahoo Finance (yfinance')
 
 @st.cache_data(ttl=60)
 def fetch_quote(ticker: str):
