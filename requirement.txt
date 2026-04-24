@@ -1,4 +1,0 @@
-streamlit==1.25.0
-yfinance
-plotly
-pandas>=2.0.0
